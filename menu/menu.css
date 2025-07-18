@@ -1,0 +1,62 @@
+body {
+    background-color: #EFEFEF;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pizza {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    width: 1300px;
+}
+
+.right {
+    margin-top: 30px;
+    box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.image-container {
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.pizza2 {
+    display: none;
+}
+
+
+@media all and (max-width: 800px) {
+    .right {
+        align-self: center;
+    }
+
+    .overlay-image {
+        align-self: center;
+    }
+
+    .pizza {
+        display: none;
+    }
+
+    .pizza2 {
+        display: block;
+        position: absolute;
+        z-index: -2;
+        opacity: 0.3;
+        width: 500px;
+        left: 120px;
+        top: 800px;
+    }
+}

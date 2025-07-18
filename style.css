@@ -1,0 +1,106 @@
+body {
+    background-color: #EFEFEF;
+    margin: 0;
+}
+
+#logo {
+    width: 167px;
+    margin-left: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#italian {
+    font-family: 'Allura', cursive;
+    font-size: 100px;
+    margin: 0;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.50);
+}
+
+#cuisine {
+    font-family: 'Bubblegum Sans', sans-serif;
+    margin: 0;
+    font-size: 180px;
+    padding-right: 0;
+    line-height: 0.5;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.50);
+}
+
+.name {
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.pizza {
+    position: absolute;
+    z-index: -2;
+    opacity: 0.3;
+    width: 1300px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dish {
+    width: 750px;
+    justify-self: left;
+}
+
+.container {
+    display: flex;
+
+}
+
+.pizza2 {
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+    .dish {
+        position: absolute;
+        margin-top: 120px;
+        z-index: -1;
+        left: 120px;
+        width: 800px;
+    }
+
+    .pizza {
+        display: none;
+    }
+
+    .pizza2 {
+        display: block;
+        position: absolute;
+        z-index: -2;
+        opacity: 0.3;
+        width: 300px;
+        left: 50px;
+        top: 600px;
+    }
+  
+    #italian {
+        font-size: 80px;
+    }
+
+    #cuisine {
+        margin: 0;
+        font-size: 120px;
+    }
+
+    .name {
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+  
+    a {
+        font-size: 20px;
+    }
+}
